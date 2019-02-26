@@ -1,7 +1,8 @@
 require 'fileutils'
 
-USERNAME  = 'my'
-KEYBOARDS = ['kbd4x', 'planck', 'preonic']
+USERNAME  = 'raphaelfaria'
+COMMON_DIR = 'user'
+KEYBOARDS = ['crkbd', 'planck', 'preonic']
 QMK_DIR   = "#{ENV['CODE']}/qmk_firmware"
 USER_DIR  = "#{QMK_DIR}/users/#{USERNAME}"
 
@@ -13,7 +14,7 @@ task default: :install
 
 desc 'Symlink keymap files into QMK source tree'
 task :install do
-  FileUtils.ln_s(File.expand_path('user', __dir__), USER_DIR, verbose: true)
+  FileUtils.ln_s(File.expand_path(COMMON_DIR, __dir__), USER_DIR, verbose: true)
 
   KEYBOARDS.each do |keyboard|
     FileUtils.ln_s(File.expand_path(keyboard, __dir__), keymap_dir(keyboard), verbose: true)
