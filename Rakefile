@@ -2,7 +2,7 @@ require 'fileutils'
 
 USERNAME  = 'raphaelfaria'
 COMMON_DIR = 'user'
-KEYBOARDS = ['crkbd', 'planck', 'preonic']
+KEYBOARDS = ['crkbd', 'dz60', 'planck', 'preonic']
 QMK_DIR   = "#{ENV['CODE']}/qmk_firmware"
 USER_DIR  = "#{QMK_DIR}/users/#{USERNAME}"
 

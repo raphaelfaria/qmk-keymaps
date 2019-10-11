@@ -10,7 +10,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  _________________QWERTY_L1_________________, _________________QWERTY_R1_________________, KC_BSPC,
     CTL_ESC, _________________QWERTY_L2_________________, _________________QWERTY_R2_________________, KC_QUOT,
     KC_LSFT, _________________QWERTY_L3_________________, _________________QWERTY_R3_________________, SFT_ENT,
-    FUNCL,    KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_SPC,  RAISE,   GUI_L,   ALT_D,   CTL_U,   KC_RGHT
+    FUNCL,    KC_LCTL, KC_LALT, KC_LGUI, LOWER,   KC_SPC,  KC_SPC,  RAISE,   ALT_L,   CTL_D,   KC_UP,  KC_RGHT
 ),
 
 [_LOWER] = LAYOUT_preonic_grid_wrapper(

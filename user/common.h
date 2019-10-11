@@ -31,9 +31,8 @@ enum {
 #define SFT_ENT RSFT_T(KC_ENT)
 
 #define CTL_ESC CTL_T(KC_ESC)
-#define GUI_L RGUI_T(KC_LEFT)
-#define ALT_D RALT_T(KC_DOWN)
-#define CTL_U RCTL_T(KC_UP)
+#define ALT_L RALT_T(KC_LEFT)
+#define CTL_D RCTL_T(KC_DOWN)
 
 #define TD_PRN TD(TD_LPRN_RPRN)
 #define TD_CBR TD(TD_LCBR_RCBR)
@@ -64,8 +63,8 @@ enum {
 #define _________________RAISE_R3__________________ _______, KC_LCBR, KC_RCBR, KC_UNDS, _______
 
 #define _________________ADJUST_L1_________________ _______, _______, _______, _______, _______
-#define _________________ADJUST_L2_________________ _______, KC_HOME, KC_PGUP, KC_PGDN, KC_END
-#define _________________ADJUST_L3_________________ _______, LGUI(KC_LEFT), LGUI(KC_UP), LGUI(KC_DOWN), LGUI(KC_RGHT)
+#define _________________ADJUST_L2_________________ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI, _______
+#define _________________ADJUST_L3_________________ _______, _______, _______, _______, _______
 
 #define _________________ADJUST_R1_________________ KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______
 #define _________________ADJUST_R2_________________ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______
