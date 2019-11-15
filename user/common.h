@@ -20,7 +20,8 @@ enum planck_keycodes {
 enum {
   TD_LPRN_RPRN = 0,
   TD_LCBR_RCBR = 1,
-  TD_LBRC_RBRC = 2
+  TD_LBRC_RBRC = 2,
+  TD_TAB_NAV = 3
 };
 
 //extern qk_tap_dance_action_t tap_dance_actions[];
@@ -37,6 +38,7 @@ enum {
 #define TD_PRN TD(TD_LPRN_RPRN)
 #define TD_CBR TD(TD_LCBR_RCBR)
 #define TD_BRC TD(TD_LBRC_RBRC)
+#define TD_TN TD(TD_TAB_NAV)
 
 #define _________________QWERTY_L1_________________ KC_Q,    KC_W,    KC_E,    KC_R,    KC_T
 #define _________________QWERTY_L2_________________ KC_A,    KC_S,    KC_D,    KC_F,    KC_G
